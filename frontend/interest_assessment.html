@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旅游推荐 - 兴趣评估</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>旅游推荐</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">兴趣评估</a></li>
+                <li><a href="city_attractions.html">城市景点</a></li>
+                <li><a href="attractions_ranking.html">景点排行</a></li>
+                <li><a href="recommendations.html">精选推荐</a></li>
+                <li><a href="#" id="logout"><i class="fas fa-sign-out-alt"></i> 退出</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="assessment-section">
+            <h2>兴趣爱好评估</h2>
+            <p>请回答以下问题，帮助我们更好地了解您的旅游偏好</p>
+            
+            <form id="assessmentForm">
+                <div class="question">
+                    <p>1. 您更喜欢哪种类型的旅游？</p>
+                    <div class="options">
+                        <label><input type="radio" name="q1" value="自然风光" required> 自然风光</label>
+                        <label><input type="radio" name="q1" value="历史文化"> 历史文化</label>
+                        <label><input type="radio" name="q1" value="都市观光"> 都市观光</label>
+                        <label><input type="radio" name="q1" value="主题乐园"> 主题乐园</label>
+                        <label><input type="radio" name="q1" value="美食探索"> 美食探索</label>
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <p>2. 您旅游时更注重什么？</p>
+                    <div class="options">
+                        <label><input type="radio" name="q2" value="放松休闲" required> 放松休闲</label>
+                        <label><input type="radio" name="q2" value="刺激冒险"> 刺激冒险</label>
+                        <label><input type="radio" name="q2" value="文化体验"> 文化体验</label>
+                        <label><input type="radio" name="q2" value="拍照打卡"> 拍照打卡</label>
+                        <label><input type="radio" name="q2" value="美食享受"> 美食享受</label>
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <p>3. 您偏好的旅行节奏是？</p>
+                    <div class="options">
+                        <label><input type="radio" name="q3" value="慢节奏深度游" required> 慢节奏深度游</label>
+                        <label><input type="radio" name="q3" value="紧凑观光"> 紧凑观光</label>
+                        <label><input type="radio" name="q3" value="灵活随意"> 灵活随意</label>
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <p>4. 您对以下哪些活动感兴趣？（可多选）</p>
+                    <div class="options">
+                        <label><input type="checkbox" name="q4" value="徒步"> 徒步</label>
+                        <label><input type="checkbox" name="q4" value="购物"> 购物</label>
+                        <label><input type="checkbox" name="q4" value="博物馆"> 博物馆</label>
+                        <label><input type="checkbox" name="q4" value="品尝当地美食"> 品尝当地美食</label>
+                        <label><input type="checkbox" name="q4" value="夜生活"> 夜生活</label>
+                        <label><input type="checkbox" name="q4" value="参观历史古迹"> 参观历史古迹</label>
+                        <label><input type="checkbox" name="q4" value="水上活动"> 水上活动</label>
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <p>5. 您能接受的景点拥挤程度？</p>
+                    <div class="options">
+                        <label><input type="radio" name="q5" value="非常安静" required> 非常安静，人越少越好</label>
+                        <label><input type="radio" name="q5" value="适中"> 适中，有一定人气但不拥挤</label>
+                        <label><input type="radio" name="q5" value="热闹"> 热闹，越热闹越有氛围</label>
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <p>6. 您对景点的消费水平敏感度？</p>
+                    <div class="options">
+                        <label><input type="radio" name="q6" value="非常敏感" required> 非常敏感，优先考虑免费或低价景点</label>
+                        <label><input type="radio" name="q6" value="一般"> 一般，性价比高即可</label>
+                        <label><input type="radio" name="q6" value="不敏感"> 不敏感，愿意为优质体验付费</label>
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <p>7. 您喜欢的旅行季节？</p>
+                    <div class="options">
+                        <label><input type="checkbox" name="q7" value="春季"> 春季</label>
+                        <label><input type="checkbox" name="q7" value="夏季"> 夏季</label>
+                        <label><input type="checkbox" name="q7" value="秋季"> 秋季</label>
+                        <label><input type="checkbox" name="q7" value="冬季"> 冬季</label>
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn-primary">提交评估</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 旅游推荐网站 - 探索世界，发现美好</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

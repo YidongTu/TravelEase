@@ -1,0 +1,53 @@
+# ===== Python 缓存/字节码 =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# ===== 虚拟环境 =====
+venv/
+env/
+ENV/
+.venv/
+virtualenv/
+
+# ===== 数据库文件（敏感/本地数据，不要上传） =====
+*.db
+*.sqlite
+*.sqlite3
+instance/
+
+# ===== 日志文件 =====
+*.log
+ctrip_crawler.log
+
+# ===== IDE 配置 =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ===== 系统文件 =====
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ===== 环境变量/密钥（绝对不要上传） =====
+.env
+.env.local
+.env.*.local
+
+# ===== Node.js 依赖（如使用） =====
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ===== 爬虫临时文件 =====
+*.csv
+temp/
+tmp/
+cache/

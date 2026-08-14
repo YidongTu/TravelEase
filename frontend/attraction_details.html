@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旅游推荐 - 景点详情</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>旅游推荐</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="interest_assessment.html">兴趣评估</a></li>
+                <li><a href="city_attractions.html">城市景点</a></li>
+                <li><a href="attractions_ranking.html">景点排行</a></li>
+                <li><a href="recommendations.html">精选推荐</a></li>
+                <li><a href="#" id="logout"><i class="fas fa-sign-out-alt"></i> 退出</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="attraction-detail">
+            <div class="loading" id="loadingIndicator">
+                <i class="fas fa-spinner fa-spin"></i> 正在加载景点详情...
+            </div>
+            
+            <div id="attractionContent" style="display: none;">
+                <div class="attraction-header">
+                    <h2 id="attractionName"></h2>
+                    <div class="attraction-meta">
+                        <span id="attractionLocation"><i class="fas fa-map-marker-alt"></i></span>
+                        <span id="attractionScore"><i class="fas fa-star"></i> 评分：--</span>
+                        <span id="attractionMatch"><i class="fas fa-heart"></i> 匹配度：--</span>
+                    </div>
+                </div>
+                
+                <div class="attraction-gallery" id="attractionGallery">
+                    <!-- 景点图片将通过JavaScript动态加载 -->
+                </div>
+                
+                <div class="attraction-info">
+                    <h3>景点介绍</h3>
+                    <p id="attractionDescription"></p>
+                    
+                    <h3>基本信息</h3>
+                    <div class="info-grid">
+                        <div class="info-item"><strong>开放时间：</strong><span id="attractionHours"></span></div>
+                        <div class="info-item"><strong>门票价格：</strong><span id="attractionPrice"></span></div>
+                        <div class="info-item"><strong>建议游玩时间：</strong><span id="attractionTime"></span></div>
+                        <div class="info-item"><strong>景点类型：</strong><span id="attractionType"></span></div>
+                    </div>
+                </div>
+                
+                <div class="attraction-assessment">
+                    <h3>景点综合评估</h3>
+                    <div class="assessment-chart">
+                        <div class="chart-item">
+                            <div class="chart-label">风景指数</div>
+                            <div class="chart-bar">
+                                <div class="chart-fill" id="sceneryScore"></div>
+                            </div>
+                            <div class="chart-value" id="sceneryValue"></div>
+                        </div>
+                        <div class="chart-item">
+                            <div class="chart-label">文化体验</div>
+                            <div class="chart-bar">
+                                <div class="chart-fill" id="cultureScore"></div>
+                            </div>
+                            <div class="chart-value" id="cultureValue"></div>
+                        </div>
+                        <div class="chart-item">
+                            <div class="chart-label">娱乐设施</div>
+                            <div class="chart-bar">
+                                <div class="chart-fill" id="facilityScore"></div>
+                            </div>
+                            <div class="chart-value" id="facilityValue"></div>
+                        </div>
+                        <div class="chart-item">
+                            <div class="chart-label">服务质量</div>
+                            <div class="chart-bar">
+                                <div class="chart-fill" id="serviceScore"></div>
+                            </div>
+                            <div class="chart-value" id="serviceValue"></div>
+                        </div>
+                        <div class="chart-item">
+                            <div class="chart-label">性价比</div>
+                            <div class="chart-bar">
+                                <div class="chart-fill" id="valueScore"></div>
+                            </div>
+                            <div class="chart-value" id="valueValue"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="assessment-summary">
+                        <h4>评估总结</h4>
+                        <p id="assessmentSummary"></p>
+                    </div>
+                </div>
+                
+                <div class="attraction-reviews">
+                    <h3>游客评价</h3>
+                    <div id="reviewsContainer">
+                        <!-- 游客评价将通过JavaScript动态加载 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 旅游推荐网站 - 探索世界，发现美好</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

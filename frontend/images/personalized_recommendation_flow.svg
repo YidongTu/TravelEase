@@ -1,0 +1,48 @@
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景和标题 -->
+  <rect width="100%" height="100%" fill="#f9f9f9" rx="10" ry="10"/>
+  <text x="400" y="30" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">个性化推荐引擎</text>
+  
+  <!-- 匹配公式 -->
+  <rect x="100" y="60" width="600" height="80" rx="10" ry="10" fill="#e3f2fd" stroke="#2196f3" stroke-width="2"/>
+  <text x="400" y="100" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">匹配度 =（用户兴趣标签权重 × 景点属性权重）+ 实时热度因子</text>
+  <text x="400" y="130" font-family="Arial" font-size="14" text-anchor="middle">RecommendationEngine.get_recommendations()</text>
+  
+  <!-- 匹配示例表 -->
+  <text x="400" y="180" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">用户标签与景点属性匹配示例表</text>
+  
+  <!-- 表格 -->
+  <rect x="200" y="200" width="400" height="180" rx="5" ry="5" fill="white" stroke="#333" stroke-width="1"/>
+  
+  <!-- 表头 -->
+  <rect x="200" y="200" width="200" height="30" fill="#4caf50" stroke="#333" stroke-width="1"/>
+  <rect x="400" y="200" width="200" height="30" fill="#4caf50" stroke="#333" stroke-width="1"/>
+  <text x="300" y="220" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="white">用户标签</text>
+  <text x="500" y="220" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="white">对应景点</text>
+  
+  <!-- 表格内容 -->
+  <rect x="200" y="230" width="200" height="30" stroke="#333" stroke-width="1"/>
+  <rect x="400" y="230" width="200" height="30" stroke="#333" stroke-width="1"/>
+  <text x="300" y="250" font-family="Arial" font-size="14" text-anchor="middle">历史文化</text>
+  <text x="500" y="250" font-family="Arial" font-size="14" text-anchor="middle">故宫、兵马俑</text>
+  
+  <rect x="200" y="260" width="200" height="30" stroke="#333" stroke-width="1"/>
+  <rect x="400" y="260" width="200" height="30" stroke="#333" stroke-width="1"/>
+  <text x="300" y="280" font-family="Arial" font-size="14" text-anchor="middle">自然风光</text>
+  <text x="500" y="280" font-family="Arial" font-size="14" text-anchor="middle">张家界、黄山</text>
+  
+  <rect x="200" y="290" width="200" height="30" stroke="#333" stroke-width="1"/>
+  <rect x="400" y="290" width="200" height="30" stroke="#333" stroke-width="1"/>
+  <text x="300" y="310" font-family="Arial" font-size="14" text-anchor="middle">美食探索</text>
+  <text x="500" y="310" font-family="Arial" font-size="14" text-anchor="middle">户部巷、夫子庙</text>
+  
+  <rect x="200" y="320" width="200" height="30" stroke="#333" stroke-width="1"/>
+  <rect x="400" y="320" width="200" height="30" stroke="#333" stroke-width="1"/>
+  <text x="300" y="340" font-family="Arial" font-size="14" text-anchor="middle">主题乐园</text>
+  <text x="500" y="340" font-family="Arial" font-size="14" text-anchor="middle">迪士尼、欢乐谷</text>
+  
+  <!-- 评分计算说明 -->
+  <rect x="100" y="400" width="600" height="70" rx="10" ry="10" fill="#fff3e0" stroke="#ff9800" stroke-width="2"/>
+  <text x="400" y="430" font-family="Arial" font-size="14" text-anchor="middle">评分计算逻辑: AttractionAssessor.calculate_match_score()</text>
+  <text x="400" y="455" font-family="Arial" font-size="14" text-anchor="middle">综合匹配度 = (特征平均 * 0.7) + (类型匹配 * 0.3)</text>
+</svg>

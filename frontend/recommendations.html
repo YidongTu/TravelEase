@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旅游推荐 - 精选推荐</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>旅游推荐</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="interest_assessment.html">兴趣评估</a></li>
+                <li><a href="city_attractions.html">城市景点</a></li>
+                <li><a href="attractions_ranking.html">景点排行</a></li>
+                <li><a href="#" class="active">精选推荐</a></li>
+                <li><a href="#" id="logout"><i class="fas fa-sign-out-alt"></i> 退出</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="recommendations-intro">
+            <h2>为您精选的旅游景点</h2>
+            <p>根据您的兴趣偏好，我们为您推荐以下景点</p>
+        </section>
+
+        <section class="recommendations-filters">
+            <form id="recommendationsFilterForm">
+                <div class="form-group">
+                    <label for="recommendationCity"><i class="fas fa-map-marker-alt"></i> 选择城市（可选）</label>
+                    <select id="recommendationCity">
+                        <option value="">-- 不限城市 --</option>
+                        <option value="北京">北京</option>
+                        <option value="上海">上海</option>
+                        <option value="广州">广州</option>
+                        <option value="深圳">深圳</option>
+                        <option value="成都">成都</option>
+                        <option value="杭州">杭州</option>
+                        <option value="西安">西安</option>
+                        <option value="南京">南京</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-primary">筛选推荐</button>
+            </form>
+        </section>
+
+        <section class="recommendations-list">
+            <div class="loading" id="loadingIndicator" style="display: none;">
+                <i class="fas fa-spinner fa-spin"></i> 正在加载推荐景点...
+            </div>
+            <div id="noAssessmentMessage" style="display: none; text-align: center; padding: 2rem;">
+                <i class="fas fa-info-circle fa-3x" style="color: #666;"></i>
+                <p>请先完成<a href="interest_assessment.html">兴趣爱好评估</a>，以便我们为您提供个性化推荐</p>
+            </div>
+            <div class="attractions-grid" id="recommendationsContainer">
+                <!-- 推荐景点将通过JavaScript动态加载 -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 旅游推荐网站 - 探索世界，发现美好</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

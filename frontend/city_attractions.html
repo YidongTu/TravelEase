@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旅游推荐 - 城市景点</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>旅游推荐</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="interest_assessment.html">兴趣评估</a></li>
+                <li><a href="#" class="active">城市景点</a></li>
+                <li><a href="attractions_ranking.html">景点排行</a></li>
+                <li><a href="recommendations.html">精选推荐</a></li>
+                <li><a href="#" id="logout"><i class="fas fa-sign-out-alt"></i> 退出</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="city-selection">
+            <h2>选择城市</h2>
+            <form id="cityForm">
+                <div class="form-group">
+                    <label for="city"><i class="fas fa-map-marker-alt"></i> 请选择或输入城市</label>
+                    <select id="city" required>
+                        <option value="">-- 选择城市 --</option>
+                        <option value="北京">北京</option>
+                        <option value="上海">上海</option>
+                        <option value="广州">广州</option>
+                        <option value="深圳">深圳</option>
+                        <option value="成都">成都</option>
+                        <option value="杭州">杭州</option>
+                        <option value="西安">西安</option>
+                        <option value="南京">南京</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-primary">查询景点</button>
+            </form>
+        </section>
+
+        <section class="attractions-list" id="attractionsList">
+            <h2>景点列表</h2>
+            <div class="loading" id="loadingIndicator" style="display: none;">
+                <i class="fas fa-spinner fa-spin"></i> 正在加载景点数据...
+            </div>
+            <div class="attractions-grid" id="attractionsContainer">
+                <!-- 景点卡片将通过JavaScript动态加载 -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 旅游推荐网站 - 探索世界，发现美好</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

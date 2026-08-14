@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旅游推荐系统 - 核心算法流程图</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .flow-container {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .flow-container h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .flow-image {
+            max-width: 100%;
+            height: auto;
+        }
+        .flow-description {
+            margin-top: 20px;
+            color: #666;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>旅游推荐系统</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="interest_assessment.html">兴趣评估</a></li>
+                <li><a href="city_attractions.html">城市景点</a></li>
+                <li><a href="attractions_ranking.html">景点排行</a></li>
+                <li><a href="recommendations.html">精选推荐</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="flow-container">
+            <h2>AI 兴趣分析算法</h2>
+            <img src="images/ai_interest_analysis_flow.svg" alt="AI 兴趣分析算法流程图" class="flow-image">
+            <div class="flow-description">
+                <p>该算法通过问卷收集用户旅游偏好，经过UserAssessmentAnalyzer类进行定性到量化的转换，</p>
+                <p>调用DeepSeek API生成自然语言报告，并输出关键的用户兴趣标签。</p>
+            </div>
+        </section>
+
+        <section class="flow-container">
+            <h2>个性化推荐引擎</h2>
+            <img src="images/personalized_recommendation_flow.svg" alt="个性化推荐引擎流程图" class="flow-image">
+            <div class="flow-description">
+                <p>推荐引擎使用匹配公式：匹配度 =（用户兴趣标签权重 × 景点属性权重）+ 实时热度因子，</p>
+                <p>根据用户标签与景点属性的匹配程度，为用户提供个性化的旅游推荐。</p>
+            </div>
+        </section>
+
+        <section class="flow-container">
+            <h2>分布式爬虫技术</h2>
+            <img src="images/distributed_crawler_flow.svg" alt="分布式爬虫技术流程图" class="flow-image">
+            <div class="flow-description">
+                <p>爬虫系统采用多线程技术爬取数据，经过清洗、标准化存储，并实现每日一次的定期更新，</p>
+                <p>确保景点开放时间、活动信息等数据的实时准确性。</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 旅游推荐系统 - 核心算法与技术实现</p>
+    </footer>
+</body>
+</html>
